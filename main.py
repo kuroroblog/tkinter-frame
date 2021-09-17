@@ -1,6 +1,5 @@
 import tkinter as tk
 
-
 class Application(tk.Frame):
     def __init__(self, master=None):
         # Windowの初期設定を行う。
@@ -24,12 +23,24 @@ class Application(tk.Frame):
         # bg : 背景色の設定
         # 色について : https://kuroro.blog/python/YcZ6Yh4PswqUzaQXwnG2/
         # Labelについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
-        label = tk.Label(frame, text="label", width=30, height=15, bg="green")
+        label1 = tk.Label(frame, text="label1", width=10, height=5, bg="green")
 
         # frame Widget(Frame)を親要素とした場合に、label Widgetをどのように配置するのか?
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
-        label.pack()
+        label1.pack()
 
+        # frame Widget(Frame)を親要素として、label Widgetを作成する。
+        # text : テキスト情報
+        # width : 幅の設定
+        # height : 高さの設定
+        # bg : 背景色の設定
+        # 色について : https://kuroro.blog/python/YcZ6Yh4PswqUzaQXwnG2/
+        # Labelについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
+        label2 = tk.Label(frame, text="label2", width=10, height=5, bg="blue")
+
+        # frame Widget(Frame)を親要素とした場合に、label Widgetをどのように配置するのか?
+        # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
+        label2.pack()
 
 # Tkinter初学者参考 : https://docs.python.org/ja/3/library/tkinter.html#a-simple-hello-world-program
 if __name__ == "__main__":
